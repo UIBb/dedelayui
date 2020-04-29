@@ -1,6 +1,6 @@
 #### dedecmsLayui
 
-1.  dedecms5.7的后台源码，layui的版本我更新到了最新版2.5.5
+1.  dedecms5.7的后台源码，layui的版本我更新到了最新版2.5.6
 2.  后台菜单我注释了一些不用的功能，自己可以打开，在后台index_body.html里面修改即可
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0429/163709_9bd0767b_383370.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0429/163728_53877bd1_383370.png "屏幕截图.png")
