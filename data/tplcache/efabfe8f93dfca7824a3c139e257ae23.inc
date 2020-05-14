@@ -1,0 +1,1 @@
+<a href='[field:arcurl/]'>[field:id/]--[field:title/]</a>

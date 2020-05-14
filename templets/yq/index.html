@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="{dede:global.cfg_soft_lang/}">
+  <title>{dede:global.cfg_webname/}</title>
+  <meta name="description" content="{dede:global.cfg_description/}" />
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+  <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+</head>
+
+<body>
+  <!-- {dede:global.cfg_templets_skin/}
+{dede:global.cfg_mobileurl/} -->
+{dede:global.cfg_cmsurl/}
+  <div></div>
+  <div>{dede:global.cfg_cmspath/}</div>
+  <hr>
+  {dede:channel type='top' row='8'}
+  <li>[field:id/]<a href='[field:typelink/]'>[field:typename/]</a></li>
+  {/dede:channel}
+  <hr>
+  {dede:arclist}
+  <a href='[field:arcurl/]'>[field:id/]--[field:title/]</a>
+  {/dede:arclist}
+  <hr>
+  {dede:channelartlist row=6}
+  <dl>
+    <dt><a href='{dede:field name="typeurl"/}'>{dede:field name='typename'/}</a></dt>
+    <dd>
+      {dede:arclist titlelen='42' row='10'}
+      <ul class='autod'>
+        <li><a href="[field:arcurl /]">[field:title /]</a></li>
+        <li>([field:pubdate function="MyDate('m-d',@me)"/])</li>
+      </ul>
+      {/dede:arclist}
+  </dl>
+  {/dede:channelartlist}
+</body>
+
+</html>
