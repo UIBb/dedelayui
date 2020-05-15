@@ -39,7 +39,7 @@ if ($dopost == "addArchives") {
 function listArchives();
 ---------------------------*/
 else if ($dopost == "getAllCatalog") {
-    $sql="SELECT b.typename as channelname,(SELECT count(*) from #@__archives WHERE arcrank!='-2' and typeid = a.id) as totalarc,a.* FROM `#@__arctype` a,`#@__channeltype` b WHERE a.channeltype=b.id";
+    $sql="SELECT b.typename as channelname,(SELECT count(*) from #@__archives WHERE arcrank!='-2' and typeid = a.id) as totalarc,a.* FROM `#@__arctype` a,`#@__channeltype` b WHERE a.channeltype=b.id order by a.sortrank asc ";
     $dsql->SetQuery($sql);
     $dsql->Execute();
     // var_dump($dsql->queryString); 
