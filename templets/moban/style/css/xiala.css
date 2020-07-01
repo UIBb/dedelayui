@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#uboxstyle2{width:160px; float:left;}
+#uboxstyle2 .select_box{width:158px; border:1px solid #cdcdcd; height:28px; float:left; background:#f0f0f0;}
+#uboxstyle2 div.tag_select{display:block;color:#999999;width:140px;height:28px;background:url(img/xiaj.png) right center no-repeat;padding:0 10px;line-height:28px; font-size:12px;}
+#uboxstyle2 div.tag_select_hover{display:block;color:#999999;width:140px;height:28px;background:url(img/xiaj.png) right center no-repeat;padding:0 10px;line-height:28px; font-size:12px;}
+#uboxstyle2 div.tag_select_open{display:block;color:#999999;width:140px;height:28px;background:url(img/xiaj.png) right  center no-repeat;padding:0 10px;line-height:28px; font-size:12px;}
+#uboxstyle2 ul.tag_options{position:absolute;padding:0;margin:0;list-style:none;background:#f5f5f5;width:160px;padding:0 0 5px; margin-left:-1px;}
+#uboxstyle2 ul.tag_options li{display:block;width:140px;padding:0 10px;height:28px;text-decoration:none;line-height:28px;color:#999999; font-size:12px;}
+#uboxstyle2 ul.tag_options li.open_hover{background:#3d77ce;color:#fff}
+#uboxstyle2 ul.tag_options li.open_selected{background:#3d77ce;color:#fff}

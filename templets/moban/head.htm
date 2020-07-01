@@ -1,0 +1,85 @@
+<meta name="viewport" content="width=1280px">
+<div class="top qing">
+  <div class="qing" style="background:#FFF;">
+    <div class="qing juzhong">
+      <a href="/" class="lf">
+        <img src="{dede:global.cfg_templets_skin/}/style/images/logo.png" width="852" height="118">
+      </a>
+      <div class="rf">
+        <img src="{dede:global.cfg_templets_skin/}/style/images/ttel.png" width="242" height="118">
+      </div>
+    </div>
+  </div>
+  <div class="qing nabg">
+    <div class="qing juzhong" style="overflow:visible;">
+      <ul class="nav" id="sddm">
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li>
+          {dede:type typeid="1"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m1" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="1"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+        <li>
+          {dede:type typeid="2"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m2')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m2" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="2"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+        <li>
+          {dede:type typeid="3"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m3')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m3" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="3"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+        <li>
+          {dede:type typeid="4"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m4')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m4" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="4"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+        <li>
+          {dede:type typeid="5"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m5')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m5" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="5"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+        <li>
+          {dede:type typeid="6"}
+          <a href="[field:typelink/]" onMouseOver="mopen('m6')" onMouseOut="mclosetime()">[field:typename/]</a>
+          {/dede:type}
+          <div id="m6" class="erj" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+            {dede:channel type='son' typeid="6"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            {/dede:channel}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('.nav li').eq({dede: field.typeid function = 'GetTopid(@me)' /}).addClass('nann');
+</script>

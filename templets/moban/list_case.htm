@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1280px">
+  <title>{dede:field.typename/}-{dede:global.cfg_webname/}</title>
+  <meta name="keywords" content="{dede:field.keywords/}"/>
+  <meta name="description" content="{dede:field.description  function='html2text(@me)'/}"/>
+  <link href="{dede:global.cfg_templets_skin/}/style/css/style.css" rel="stylesheet" type="text/css">
+  <link href="{dede:global.cfg_templets_skin/}/style/css/xiala.css" rel="stylesheet" type="text/css"><!--切换样式-->
+  <!--导航js开始-->
+  <script type="text/javascript">
+    <!--
+    var timeout = 500;
+    var closetimer = 0;
+    var ddmenuitem = 0;
+    // open hidden layer
+    function mopen(id) {
+      // cancel close timer
+      mcancelclosetime();
+      // close old layer
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+      // get new layer and show it
+      ddmenuitem = document.getElementById(id);
+      ddmenuitem.style.visibility = 'visible';
+    }
+    // close showed layer
+    function mclose() {
+      if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    }
+    // go close timer
+    function mclosetime() {
+      closetimer = window.setTimeout(mclose, timeout);
+    }
+    // cancel close timer
+    function mcancelclosetime() {
+      if (closetimer) {
+        window.clearTimeout(closetimer);
+        closetimer = null;
+      }
+    }
+    // close layer when click-out
+    document.onclick = mclose;
+    // -->
+  </script>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/js/jquery.js"></script>
+</head>
+<body style="background:#f0f0f0;">
+{dede:include filename="head.htm"/}
+<!--内容-->
+<div class="qing aban">
+  <div class="aban0" style="background:url({dede:global.cfg_templets_skin/}/style/images/img/2016012118362998502.jpg) center top no-repeat;"></div>
+</div>
+<div class="qing juzhong" style="padding-top:32px;">
+  <div class="lf" style="width:270px;">
+    <div class="qing cedao" style="padding-bottom:20px;">
+      <div class="qing yeti">
+        <div class="yeti1">
+          <span class="yeti_cn">工程案例</span>
+          <span class="yeti_en"> / CASE</span>
+        </div>
+        <div class="yeti2">
+          <span class="yeti_cn">工程案例</span>
+          <span class="yeti_en"> / CASE</span>
+        </div>
+      </div>
+      <div class="qing cenav">
+        <ul>
+          {dede:channel type='son'}
+          <li>
+            <a href="[field:typelink/]">[field:typename/]</a>
+          </li>
+          {/dede:channel}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="rf neir">
+    <div class="qing" style="border-bottom:1px solid #dedede; padding-bottom:14px;">
+      <div class="lf" style="width:400px;"><b class="tt"></b>
+        <div class="lf nti">{dede:field.typename/}</div>
+      </div>
+      <div class="rf weiz">当前位置：{dede:field name='position'/}</div>
+    </div>
+    <div class="qing" style="height:40px;"></div>
+    <div class="qing ca01">
+      {dede:list pagesize ='12'}
+      <div class="ca">
+        <a href="[field:arcurl/]" data-lightbox="example-set" title="[field:title/]" class="catu">
+          <img src="[field:picname/]" width="263" height="200">
+        </a>
+        <a href="[field:arcurl/]" data-lightbox="example-2" title="[field:title/]" class="cati">[field:title/]</a>
+      </div>
+      {/dede:list}
+    </div>
+    <div class="qing yema" style="padding-top:30px;">
+      {dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="2"/}
+    </div>
+  </div>
+</div>
+<div class="qing" style="height:50px;"></div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>

@@ -687,7 +687,7 @@ class DedeTagParse
      */
     function SaveTo($filename)
     {
-        $fp = @fopen($filename, "w") or die("DedeTag Engine Create File False");
+        $fp = @fopen($filename, "w") or die("DedeTag Engine Create File False".$filename);
         fwrite($fp, $this->GetResult());
         fclose($fp);
     }
